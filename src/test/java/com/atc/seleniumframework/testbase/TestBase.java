@@ -36,7 +36,6 @@ import com.atc.seleniumframework.utilities.reporting.ExtentReportManager;
 public class TestBase {
 	
 	public WebDriver Webdriver;
-	public AndroidDriver<WebElement> Andrioddriver;
 	public ExtentReports extent;
 	WebDriver wait;
 	public EventFiringWebDriver eventDriver;
@@ -78,9 +77,6 @@ public class TestBase {
 		 if(result.getStatus()!=ITestResult.SUCCESS) {
 			 if(result.getThrowable()!=null) {
 				 ExtentTestManager.getTest().log(LogStatus.FAIL, result.getThrowable());
-			 }
-			 if(Webdriver==null && Andrioddriver!=null) {
-				 Webdriver=Andrioddriver;
 			 }
 			 
 			ExtentTestManager.getTest().log(LogStatus.FAIL, ExtentTestManager.getTest().addBase64ScreenShot(ExtentReportManager.CaptureScreenshot(Webdriver)));

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16629" started-at="2020-03-24T10:28:56Z" finished-at="2020-03-24T10:29:12Z">
+  <suite name="Default suite" duration-ms="38275" started-at="2020-03-26T13:31:15Z" finished-at="2020-03-26T13:31:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16629" started-at="2020-03-24T10:28:56Z" finished-at="2020-03-24T10:29:12Z">
-      <class name="com.atc.seleniumframework.tests.Pillow_Purchase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5]" name="beforeSuite" is-config="true" duration-ms="48" started-at="2020-03-24T10:28:56Z" finished-at="2020-03-24T10:28:56Z">
+    <test name="Default test" duration-ms="38275" started-at="2020-03-26T13:31:15Z" finished-at="2020-03-26T13:31:53Z">
+      <class name="com.atc.seleniumframework.tests.Invalid_CreditCard_Num">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="beforeSuite" is-config="true" duration-ms="37" started-at="2020-03-26T13:31:15Z" finished-at="2020-03-26T13:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5]" name="beforeTest" is-config="true" duration-ms="7011" started-at="2020-03-24T10:28:56Z" finished-at="2020-03-24T10:29:03Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="beforeTest" is-config="true" duration-ms="7102" started-at="2020-03-26T13:31:15Z" finished-at="2020-03-26T13:31:22Z">
           <params>
             <param index="0">
               <value>
@@ -22,30 +22,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Pillow_Purchase()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5]" name="Pillow_Purchase" duration-ms="8413" started-at="2020-03-24T10:29:03Z" finished-at="2020-03-24T10:29:11Z">
+        <test-method status="PASS" signature="Invalid_CreditCard_Num()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="Invalid_CreditCard_Num" duration-ms="30311" started-at="2020-03-26T13:31:22Z" finished-at="2020-03-26T13:31:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Pillow_Purchase -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-24T10:29:11Z" finished-at="2020-03-24T10:29:11Z">
+        </test-method> <!-- Invalid_CreditCard_Num -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-03-26T13:31:52Z" finished-at="2020-03-26T13:31:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Pillow_Purchase status=SUCCESS method=Pillow_Purchase.Pillow_Purchase()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5] output={null}]]]>
+                <![CDATA[[TestResult name=Invalid_CreditCard_Num status=SUCCESS method=Invalid_CreditCard_Num.Invalid_CreditCard_Num()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5]" name="afterTest" is-config="true" duration-ms="1180" started-at="2020-03-24T10:29:11Z" finished-at="2020-03-24T10:29:12Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="afterTest" is-config="true" duration-ms="831" started-at="2020-03-26T13:31:52Z" finished-at="2020-03-26T13:31:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@5f2108b5]" name="afterSuite" is-config="true" duration-ms="616" started-at="2020-03-24T10:29:12Z" finished-at="2020-03-24T10:29:13Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="afterSuite" is-config="true" duration-ms="456" started-at="2020-03-26T13:31:53Z" finished-at="2020-03-26T13:31:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.atc.seleniumframework.tests.Pillow_Purchase -->
+      </class> <!-- com.atc.seleniumframework.tests.Invalid_CreditCard_Num -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

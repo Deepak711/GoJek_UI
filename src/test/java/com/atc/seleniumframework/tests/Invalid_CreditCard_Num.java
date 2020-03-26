@@ -12,13 +12,13 @@ import com.atc.seleniumframework.utilities.reporting.ExtentTestManager;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class Pillow_Purchase extends TestBase {
+public class Invalid_CreditCard_Num extends TestBase {
 	ExtentTest extentTest;
 	Web_LoginPage loginPage;
 	Web_HomePage homePage;
 	
 	@Test
-	public void Pillow_Purchase() throws Exception{
+	public void Invalid_CreditCard_Num() throws Exception{
 		//Load data from Excel Sheet
 		GeneralUtils.readExceldata(dataMap, this.getClass().getSimpleName());
 		

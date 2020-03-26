@@ -17,7 +17,7 @@ public class Web_LoginPage{
 	
 	public Web_HomePage launchApp(String vURL)
 	{
-		System.out.println(vURL);
+		//System.out.println(vURL);
 		driver.get(vURL);
 		Assert.assertTrue(driver.getCurrentUrl().contains(vURL),"URL MATCHED");
 		return new Web_HomePage(driver);

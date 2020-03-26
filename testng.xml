@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-  <test name="Pillow Purchase">
+  <test name="Valid Pillow Purchase">
   <parameter name= "browser" value ="chrome"/>
     <classes>
       <class name="com.atc.seleniumframework.tests.Pillow_Purchase"/>
+    </classes>
+  </test>Test
+    <test name="Invalid Credit card details">
+  <parameter name= "browser" value ="chrome"/>
+    <classes>
+      <class name="com.atc.seleniumframework.tests.Invalid_CreditCard_Num"/>
     </classes>
   </test>Test
 </suite> <!-- Suite -->
