@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atc.seleniumframework.tests.Pillow_Purchase">
+      <class name="com.atc.seleniumframework.tests.Invalid_CreditCard_Num">
         <methods>
-          <include name="Pillow_Purchase"/>
           <include name="beforeSuite"/>
+          <include name="Invalid_CreditCard_Num"/>
           <include name="afterSuite"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.atc.seleniumframework.tests.Pillow_Purchase -->
+      </class> <!-- com.atc.seleniumframework.tests.Invalid_CreditCard_Num -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

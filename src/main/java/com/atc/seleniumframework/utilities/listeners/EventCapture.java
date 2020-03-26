@@ -11,10 +11,10 @@ import com.atc.seleniumframework.utilities.reporting.ExtentTestManager;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class EventCapture implements WebDriverEventListener {
-	
 	public void afterChangeValueOf(WebElement arg0, WebDriver arg1) {
 	 // TODO Auto-generated method stub
 	 System.out.println("From Event Listener");
+	 ExtentTestManager.getTest().log(LogStatus.INFO, ExtentTestManager.getTest().addBase64ScreenShot(ExtentReportManager.CaptureScreenshot(arg1)));
 	 }
 	 
 	 @Override
