@@ -34,7 +34,7 @@ public class Web_PurchasePage {
 
 	public @FindBy(xpath = "//div[@id='app']//a[@class='button-main-content']//span[text()='Continue']") WebElement btn_Continue;
 
-	public @FindBy(xpath = "//a[@class='list with-promo']") WebElement btn_CreditCard;
+	public @FindBy(xpath = "//a[@class='list' and @href='#/credit-card']") WebElement btn_CreditCard;
 
 	public @FindBy(xpath = "//input[@name='cardnumber']") WebElement txt_Cardnumber;
 
@@ -118,8 +118,9 @@ public class Web_PurchasePage {
 		}
 		WaitUtils.waitForPageToLoad(driver);
 		if (GeneralUtils.CheckElementdisplayed(btn_Paynow)) {
-			Assert.assertEquals(btn_Paynow.isDisplayed(), true, "Paynow button is present and selected");
+			Assert.assertTrue(btn_Paynow.isDisplayed());
 			GeneralUtils.clickWebElementbyJavascript(btn_Paynow);
+			
 		}
 		//Enter OTP and complete the transaction
 		WaitUtils.waitForPageToLoad(driver);

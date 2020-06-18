@@ -8,43 +8,37 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,546</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Valid Pillow Purchase</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,467</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Invalid Credit card details</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,361</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">10,828</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.atc.seleniumframework.tests.Invalid_CreditCard_Num</td><td><a href="#m0">Invalid_CreditCard_Num</a></td><td rowspan="1">1585243400740</td><td rowspan="1">32674</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Valid Pillow Purchase &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.atc.seleniumframework.tests.Pillow_Purchase</td><td><a href="#m0">Pillow_Purchase</a></td><td rowspan="1">1592463926852</td><td rowspan="1">421</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Invalid Credit card details &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.atc.seleniumframework.tests.Invalid_CreditCard_Num</td><td><a href="#m1">Invalid_CreditCard_Num</a></td><td rowspan="1">1592463931708</td><td rowspan="1">27</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.atc.seleniumframework.tests.Invalid_CreditCard_Num#Invalid_CreditCard_Num</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [4811 1111 1111 1113] but found [4811 1111 1111 1114]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotSame(Assert.java:772)
-	at org.testng.Assert.assertSame(Assert.java:723)
-	at org.testng.Assert.assertSame(Assert.java:733)
-	at com.atc.seleniumframework.pages.web.Web_PurchasePage.purchasepillow(Web_PurchasePage.java:109)
-	at com.atc.seleniumframework.tests.Invalid_CreditCard_Num.Invalid_CreditCard_Num(Invalid_CreditCard_Num.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Valid Pillow Purchase</h2><h3 id="m0">com.atc.seleniumframework.tests.Pillow_Purchase#Pillow_Purchase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.atc.seleniumframework.pages.web.Web_OrderPage.launchApp(Web_OrderPage.java:17)
+	at com.atc.seleniumframework.tests.Pillow_Purchase.Pillow_Purchase(Pillow_Purchase.java:30)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Invalid Credit card details</h2><h3 id="m1">com.atc.seleniumframework.tests.Invalid_CreditCard_Num#Invalid_CreditCard_Num</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.atc.seleniumframework.pages.web.Web_OrderPage.launchApp(Web_OrderPage.java:17)
+	at com.atc.seleniumframework.tests.Invalid_CreditCard_Num.Invalid_CreditCard_Num(Invalid_CreditCard_Num.java:30)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

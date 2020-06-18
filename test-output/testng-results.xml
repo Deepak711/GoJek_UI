@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41546" started-at="2020-03-26T17:23:13Z" finished-at="2020-03-26T17:23:55Z">
+  <suite name="Suite" duration-ms="10847" started-at="2020-06-18T07:05:21Z" finished-at="2020-06-18T07:05:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41546" started-at="2020-03-26T17:23:13Z" finished-at="2020-03-26T17:23:55Z">
-      <class name="com.atc.seleniumframework.tests.Invalid_CreditCard_Num">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="beforeSuite" is-config="true" duration-ms="25" started-at="2020-03-26T17:23:13Z" finished-at="2020-03-26T17:23:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="beforeTest" is-config="true" duration-ms="7030" started-at="2020-03-26T17:23:13Z" finished-at="2020-03-26T17:23:20Z">
+    <test name="Valid Pillow Purchase" duration-ms="6467" started-at="2020-06-18T07:05:21Z" finished-at="2020-06-18T07:05:28Z">
+      <class name="com.atc.seleniumframework.tests.Pillow_Purchase">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@1ce92674]" name="beforeTest" is-config="true" duration-ms="4943" started-at="2020-06-18T07:05:21Z" finished-at="2020-06-18T07:05:26Z">
           <params>
             <param index="0">
               <value>
@@ -22,19 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Invalid_CreditCard_Num()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="Invalid_CreditCard_Num" duration-ms="32674" started-at="2020-03-26T17:23:20Z" finished-at="2020-03-26T17:23:53Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="Pillow_Purchase()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@1ce92674]" name="Pillow_Purchase" duration-ms="421" started-at="2020-06-18T07:05:26Z" finished-at="2020-06-18T07:05:27Z">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [4811 1111 1111 1113] but found [4811 1111 1111 1114]]]>
+              <![CDATA[null value in entry: url=null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [4811 1111 1111 1113] but found [4811 1111 1111 1114]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotSame(Assert.java:772)
-at org.testng.Assert.assertSame(Assert.java:723)
-at org.testng.Assert.assertSame(Assert.java:733)
-at com.atc.seleniumframework.pages.web.Web_PurchasePage.purchasepillow(Web_PurchasePage.java:109)
-at com.atc.seleniumframework.tests.Invalid_CreditCard_Num.Invalid_CreditCard_Num(Invalid_CreditCard_Num.java:34)
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy12.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+at com.atc.seleniumframework.pages.web.Web_OrderPage.launchApp(Web_OrderPage.java:17)
+at com.atc.seleniumframework.tests.Pillow_Purchase.Pillow_Purchase(Pillow_Purchase.java:30)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -62,30 +66,116 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Invalid_CreditCard_Num -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="afterMethod" is-config="true" duration-ms="693" started-at="2020-03-26T17:23:53Z" finished-at="2020-03-26T17:23:54Z">
+        </test-method> <!-- Pillow_Purchase -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@1ce92674]" name="afterMethod" is-config="true" duration-ms="427" started-at="2020-06-18T07:05:27Z" finished-at="2020-06-18T07:05:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Invalid_CreditCard_Num status=FAILURE method=Invalid_CreditCard_Num.Invalid_CreditCard_Num()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6] output={null}]]]>
+                <![CDATA[[TestResult name=Pillow_Purchase status=FAILURE method=Pillow_Purchase.Pillow_Purchase()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@1ce92674] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="afterTest" is-config="true" duration-ms="1121" started-at="2020-03-26T17:23:54Z" finished-at="2020-03-26T17:23:55Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.atc.seleniumframework.tests.Pillow_Purchase@1ce92674]" name="afterTest" is-config="true" duration-ms="659" started-at="2020-06-18T07:05:27Z" finished-at="2020-06-18T07:05:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@73ad2d6]" name="afterSuite" is-config="true" duration-ms="672" started-at="2020-03-26T17:23:55Z" finished-at="2020-03-26T17:23:55Z">
+      </class> <!-- com.atc.seleniumframework.tests.Pillow_Purchase -->
+    </test> <!-- Valid Pillow Purchase -->
+    <test name="Invalid Credit card details" duration-ms="4361" started-at="2020-06-18T07:05:28Z" finished-at="2020-06-18T07:05:32Z">
+      <class name="com.atc.seleniumframework.tests.Invalid_CreditCard_Num">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2020-06-18T07:05:21Z" finished-at="2020-06-18T07:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338]" name="beforeTest" is-config="true" duration-ms="3326" started-at="2020-06-18T07:05:28Z" finished-at="2020-06-18T07:05:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="Invalid_CreditCard_Num()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338]" name="Invalid_CreditCard_Num" duration-ms="27" started-at="2020-06-18T07:05:31Z" finished-at="2020-06-18T07:05:31Z">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy12.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+at com.atc.seleniumframework.pages.web.Web_OrderPage.launchApp(Web_OrderPage.java:17)
+at com.atc.seleniumframework.tests.Invalid_CreditCard_Num.Invalid_CreditCard_Num(Invalid_CreditCard_Num.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_CreditCard_Num -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338]" name="afterMethod" is-config="true" duration-ms="399" started-at="2020-06-18T07:05:31Z" finished-at="2020-06-18T07:05:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Invalid_CreditCard_Num status=FAILURE method=Invalid_CreditCard_Num.Invalid_CreditCard_Num()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338]" name="afterTest" is-config="true" duration-ms="607" started-at="2020-06-18T07:05:32Z" finished-at="2020-06-18T07:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.atc.seleniumframework.tests.Invalid_CreditCard_Num@7e0b0338]" name="afterSuite" is-config="true" duration-ms="210" started-at="2020-06-18T07:05:32Z" finished-at="2020-06-18T07:05:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.atc.seleniumframework.tests.Invalid_CreditCard_Num -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Invalid Credit card details -->
+  </suite> <!-- Suite -->
 </testng-results>
